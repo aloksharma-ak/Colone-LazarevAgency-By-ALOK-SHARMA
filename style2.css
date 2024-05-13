@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 :root {
     --first-color: #6499E9;
@@ -26,22 +33,30 @@ a {
 .container {
     height: 100vh;
     margin-inline: 1.5rem;
+    display: -ms-grid;
     display: grid;
     place-items: center;
 }
 
 .button {
     position: relative;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all ease-out 1s;
+    -o-transition: all ease-out 1s;
     transition: all ease-out 1s;
 }
 
 .button:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .button:hover i {
-    animation: anime 0.2s cubic-bezier(0.19, 1, 0.22, 1) 2;
+    -webkit-animation: anime 0.2s cubic-bezier(0.19, 1, 0.22, 1) 2;
+            animation: anime 0.2s cubic-bezier(0.19, 1, 0.22, 1) 2;
 }
 
 .button__content {
@@ -58,7 +73,10 @@ a {
     z-index: 10;
     text-transform: uppercase;
     color: var(--text-color);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     letter-spacing: -0.5px;
     font-weight: 500;
     white-space: nowrap;
@@ -81,84 +99,126 @@ a {
     position: absolute;
     inset: 0;
     margin: auto;
-    filter: blur(12px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
 }
 
 .button__shape-1 {
     background-color: var(--first-color);
-    transform: translate(-48px, -16px);
-    animation: shape-1 6s 1s ease-out infinite;
+    -webkit-transform: translate(-48px, -16px);
+        -ms-transform: translate(-48px, -16px);
+            transform: translate(-48px, -16px);
+    -webkit-animation: shape-1 6s 1s ease-out infinite;
+            animation: shape-1 6s 1s ease-out infinite;
 }
 
 .button__shape-2 {
     background-color: var(--second-color);
-    transform: translate(-12px, 16px);
-    animation: shape-2 6s ease-in infinite;
+    -webkit-transform: translate(-12px, 16px);
+        -ms-transform: translate(-12px, 16px);
+            transform: translate(-12px, 16px);
+    -webkit-animation: shape-2 6s ease-in infinite;
+            animation: shape-2 6s ease-in infinite;
 }
 
 .button__shape-3 {
     background-color: var(--third-color);
-    transform: translate(20px, -16px);
-    animation: shape-3 6s ease-out infinite;
+    -webkit-transform: translate(20px, -16px);
+        -ms-transform: translate(20px, -16px);
+            transform: translate(20px, -16px);
+    -webkit-animation: shape-3 6s ease-out infinite;
+            animation: shape-3 6s ease-out infinite;
 }
 
 .button__shape-4 {
     background-color: var(--fourth-color);
-    transform: translate(48px, 16px);
-    animation: shape-4 6s 1s ease-in infinite;
+    -webkit-transform: translate(48px, 16px);
+        -ms-transform: translate(48px, 16px);
+            transform: translate(48px, 16px);
+    -webkit-animation: shape-4 6s 1s ease-in infinite;
+            animation: shape-4 6s 1s ease-in infinite;
 }
 
 .button__shape-5 {
     background-color: var(--fifth-color);
-    transform: translate(-125px, -20px);
-    animation: shape-5 6s 1s ease-out infinite;
+    -webkit-transform: translate(-125px, -20px);
+        -ms-transform: translate(-125px, -20px);
+            transform: translate(-125px, -20px);
+    -webkit-animation: shape-5 6s 1s ease-out infinite;
+            animation: shape-5 6s 1s ease-out infinite;
 }
 
 .button__shape-6 {
     background-color: var(--sixth-color);
-    transform: translate(-99px, 21px);
-    animation: shape-6 6s ease-in infinite;
+    -webkit-transform: translate(-99px, 21px);
+        -ms-transform: translate(-99px, 21px);
+            transform: translate(-99px, 21px);
+    -webkit-animation: shape-6 6s ease-in infinite;
+            animation: shape-6 6s ease-in infinite;
 }
 
 .button__shape-7 {
     background-color: var(--seventh-color);
-    transform: translate(120px, -15px);
-    animation: shape-7 7s ease-out infinite;
+    -webkit-transform: translate(120px, -15px);
+        -ms-transform: translate(120px, -15px);
+            transform: translate(120px, -15px);
+    -webkit-animation: shape-7 7s ease-out infinite;
+            animation: shape-7 7s ease-out infinite;
 }
 
 .button__shape-8 {
     background-color: var(--eighth-color);
-    transform: translate(108px, 30px);
-    animation: shape-8 6s 1s ease-in infinite;
+    -webkit-transform: translate(108px, 30px);
+        -ms-transform: translate(108px, 30px);
+            transform: translate(108px, 30px);
+    -webkit-animation: shape-8 6s 1s ease-in infinite;
+            animation: shape-8 6s 1s ease-in infinite;
 }
 
 .button__shape-9 {
     background-color: var(--nine-color);
-    transform: translate(60px, 50px);
-    animation: shape-9 6s ease-out infinite;
+    -webkit-transform: translate(60px, 50px);
+        -ms-transform: translate(60px, 50px);
+            transform: translate(60px, 50px);
+    -webkit-animation: shape-9 6s ease-out infinite;
+            animation: shape-9 6s ease-out infinite;
 }
 
 .button__shape-0 {
     background-color: var(--tenth-color);
-    transform: translate(94px, -40px);
-    animation: shape-0 6s 1s ease-in infinite;
+    -webkit-transform: translate(94px, -40px);
+        -ms-transform: translate(94px, -40px);
+            transform: translate(94px, -40px);
+    -webkit-animation: shape-0 6s 1s ease-in infinite;
+            animation: shape-0 6s 1s ease-in infinite;
 }
 
 .button__shape-11 {
     background-color: var(--eleventh-color);
-    transform: translate(-100px, -30px);
-    animation: shape-11 5s 1s ease-out infinite;
+    -webkit-transform: translate(-100px, -30px);
+        -ms-transform: translate(-100px, -30px);
+            transform: translate(-100px, -30px);
+    -webkit-animation: shape-11 5s 1s ease-out infinite;
+            animation: shape-11 5s 1s ease-out infinite;
 }
 
 .button__shape-12 {
     background-color: var(--twelve-color);
-    transform: translate(-40px, 30px);
-    animation: shape-12 3s ease-in infinite;
+    -webkit-transform: translate(-40px, 30px);
+        -ms-transform: translate(-40px, 30px);
+            transform: translate(-40px, 30px);
+    -webkit-animation: shape-12 3s ease-in infinite;
+            animation: shape-12 3s ease-in infinite;
 }
 
 .button__shadow {
     width: 80%;
     height: 1rem;
+    background: -o-linear-gradient(10deg,
+            var(--first-color) 10%,
+            var(--second-color) 30%,
+            var(--third-color) 60%,
+            var(--fourth-color) 90%);
     background: linear-gradient(80deg,
             var(--first-color) 10%,
             var(--second-color) 30%,
@@ -171,8 +231,11 @@ a {
     margin: 0 auto;
     bottom: -1px;
     z-index: -1;
-    filter: blur(12px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
 
@@ -180,101 +243,234 @@ a {
     opacity: 1;
 }
 
+@-webkit-keyframes shape-1 {
+    33% {
+        -webkit-transform: translate(-28px, 0);
+                transform: translate(-28px, 0);
+    }
+}
+
 @keyframes shape-1 {
     33% {
-        transform: translate(-28px, 0);
+        -webkit-transform: translate(-28px, 0);
+                transform: translate(-28px, 0);
+    }
+}
+
+@-webkit-keyframes shape-2 {
+    33% {
+        -webkit-transform: translate(-28px, 28px);
+                transform: translate(-28px, 28px);
     }
 }
 
 @keyframes shape-2 {
     33% {
-        transform: translate(-28px, 28px);
+        -webkit-transform: translate(-28px, 28px);
+                transform: translate(-28px, 28px);
+    }
+}
+
+@-webkit-keyframes shape-3 {
+    33% {
+        -webkit-transform: translate(20px, 4px);
+                transform: translate(20px, 4px);
     }
 }
 
 @keyframes shape-3 {
     33% {
-        transform: translate(20px, 4px);
+        -webkit-transform: translate(20px, 4px);
+                transform: translate(20px, 4px);
+    }
+}
+
+@-webkit-keyframes shape-4 {
+    33% {
+        -webkit-transform: translate(48px, 0px);
+                transform: translate(48px, 0px);
     }
 }
 
 @keyframes shape-4 {
     33% {
-        transform: translate(48px, 0px);
+        -webkit-transform: translate(48px, 0px);
+                transform: translate(48px, 0px);
+    }
+}
+
+@-webkit-keyframes shape-5 {
+    33% {
+        -webkit-transform: translate(-78px, 0);
+                transform: translate(-78px, 0);
     }
 }
 
 @keyframes shape-5 {
     33% {
-        transform: translate(-78px, 0);
+        -webkit-transform: translate(-78px, 0);
+                transform: translate(-78px, 0);
+    }
+}
+
+@-webkit-keyframes shape-6 {
+    33% {
+        -webkit-transform: translate(-110px, 28px);
+                transform: translate(-110px, 28px);
     }
 }
 
 @keyframes shape-6 {
     33% {
-        transform: translate(-110px, 28px);
+        -webkit-transform: translate(-110px, 28px);
+                transform: translate(-110px, 28px);
+    }
+}
+
+@-webkit-keyframes shape-7 {
+    33% {
+        -webkit-transform: translate(120px, 4px);
+                transform: translate(120px, 4px);
     }
 }
 
 @keyframes shape-7 {
     33% {
-        transform: translate(120px, 4px);
+        -webkit-transform: translate(120px, 4px);
+                transform: translate(120px, 4px);
+    }
+}
+
+@-webkit-keyframes shape-8 {
+    33% {
+        -webkit-transform: translate(85px, -1px);
+                transform: translate(85px, -1px);
     }
 }
 
 @keyframes shape-8 {
     33% {
-        transform: translate(85px, -1px);
+        -webkit-transform: translate(85px, -1px);
+                transform: translate(85px, -1px);
+    }
+}
+
+@-webkit-keyframes shape-9 {
+    33% {
+        -webkit-transform: translate(80px, 0);
+                transform: translate(80px, 0);
     }
 }
 
 @keyframes shape-9 {
     33% {
-        transform: translate(80px, 0);
+        -webkit-transform: translate(80px, 0);
+                transform: translate(80px, 0);
+    }
+}
+
+@-webkit-keyframes shape-0 {
+    33% {
+        -webkit-transform: translate(70px, -15px);
+                transform: translate(70px, -15px);
     }
 }
 
 @keyframes shape-0 {
     33% {
-        transform: translate(70px, -15px);
+        -webkit-transform: translate(70px, -15px);
+                transform: translate(70px, -15px);
+    }
+}
+
+@-webkit-keyframes shape-11 {
+    33% {
+        -webkit-transform: translate(-120px, -8px);
+                transform: translate(-120px, -8px);
     }
 }
 
 @keyframes shape-11 {
     33% {
-        transform: translate(-120px, -8px);
+        -webkit-transform: translate(-120px, -8px);
+                transform: translate(-120px, -8px);
+    }
+}
+
+@-webkit-keyframes shape-12 {
+    33% {
+        -webkit-transform: translate(-60px, 0px);
+                transform: translate(-60px, 0px);
     }
 }
 
 @keyframes shape-12 {
     33% {
-        transform: translate(-60px, 0px);
+        -webkit-transform: translate(-60px, 0px);
+                transform: translate(-60px, 0px);
+    }
+}
+
+@-webkit-keyframes anime {
+    0% {
+        opacity: 0.2;
+        -webkit-transform: translate(1px, -1px);
+                transform: translate(1px, -1px);
+    }
+
+    10% {
+        opacity: 0.4;
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+    }
+
+    40% {
+        opacity: 0.6;
+        -webkit-transform: translate(6px, -6px);
+                transform: translate(6px, -6px);
+    }
+
+    60% {
+        opacity: 0.8;
+        -webkit-transform: translate(8px, -8px);
+                transform: translate(8px, -8px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(10px, -10px);
+                transform: translate(10px, -10px);
     }
 }
 
 @keyframes anime {
     0% {
         opacity: 0.2;
-        transform: translate(1px, -1px);
+        -webkit-transform: translate(1px, -1px);
+                transform: translate(1px, -1px);
     }
 
     10% {
         opacity: 0.4;
-        transform: translate(2px, -2px);
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
     }
 
     40% {
         opacity: 0.6;
-        transform: translate(6px, -6px);
+        -webkit-transform: translate(6px, -6px);
+                transform: translate(6px, -6px);
     }
 
     60% {
         opacity: 0.8;
-        transform: translate(8px, -8px);
+        -webkit-transform: translate(8px, -8px);
+                transform: translate(8px, -8px);
     }
 
     100% {
         opacity: 1;
-        transform: translate(10px, -10px);
+        -webkit-transform: translate(10px, -10px);
+                transform: translate(10px, -10px);
     }
 }
